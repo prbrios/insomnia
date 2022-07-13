@@ -1,0 +1,102 @@
+_id: env_939c236af88e42ac95d2d3c0647b6708
+type: Environment
+parentId: env_4451163f27ba0499c7672aa50db747760a89219e
+modified: 1657742587178
+created: 1657736153623
+name: "DFEAPI :: 07272825000295 -> 07272825000457"
+data:
+  url: http://localhost:8080
+  uuid: 108f1c96-dd39-4a19-b992-9a591b31fff4
+  datahora: "{% now 'custom', '' %}"
+  serie: "1"
+  numero: "1"
+  emitente:
+    cnpj: "07272825000295"
+    ie: "061913057"
+    razaosocial: TECNO INDUSTRIA E COMERCIO DE COMPUTADORES LTDA
+    nomefantasia: IBYTE
+    email: email@email999.com.br
+    telefone: "85000000000"
+    crt: "3"
+    endereco:
+      logradouro: AV RUI BARBOSA
+      numero: "2456"
+      bairro: JOAQUIM TAVORA
+      codmunicipio: "2304400"
+      municipio: FORTALEZA
+      uf: CE
+      coduf: "23"
+      cep: "60115222"
+      codpais: "1058"
+      pais: BRASIL
+  destinatario:
+    cnpj: "07272825000457"
+    ie: "063589397"
+    razaosocial: TECNO INDUSTRIA E COMERCIO DE COMPUTADORES LTDA
+    nomefantasia: IBYTE
+    email: email@email999.com.br
+    telefone: "85000000000"
+    crt: "3"
+    endereco:
+      logradouro: R CLEIA
+      numero: "440"
+      bairro: BARROSO
+      codmunicipio: "2304400"
+      municipio: FORTALEZA
+      uf: CE
+      coduf: "23"
+      cep: "60863280"
+      codpais: "1058"
+      pais: BRASIL
+dataPropertyOrder:
+  "&":
+    - url
+    - uuid
+    - datahora
+    - serie
+    - numero
+    - emitente
+    - destinatario
+  "&~|emitente":
+    - cnpj
+    - ie
+    - razaosocial
+    - nomefantasia
+    - email
+    - telefone
+    - crt
+    - endereco
+  "&~|emitente~|endereco":
+    - logradouro
+    - numero
+    - bairro
+    - codmunicipio
+    - municipio
+    - uf
+    - coduf
+    - cep
+    - codpais
+    - pais
+  "&~|destinatario":
+    - cnpj
+    - ie
+    - razaosocial
+    - nomefantasia
+    - email
+    - telefone
+    - crt
+    - endereco
+  "&~|destinatario~|endereco":
+    - logradouro
+    - numero
+    - bairro
+    - codmunicipio
+    - municipio
+    - uf
+    - coduf
+    - cep
+    - codpais
+    - pais
+color: null
+isPrivate: false
+metaSortKey: 1657736153623

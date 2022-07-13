@@ -1,0 +1,233 @@
+_id: req_f6188262c22a4c0f9c90dbc4f66f15bf
+type: Request
+parentId: fld_57387dc9fb74435f84410b42f91dc84e
+modified: 1657742587674
+created: 1657736037376
+url: "{{url}}/nfe/v1/emissao"
+name: Emissão
+description: UO F01 da ibyte emite NF-e para UO F03
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"uuid": "{{_.uuid}}",
+    	"idlote": "1",
+    	"nota": {
+    		"infnfe": {
+    			"versao": "",
+    			"id": "",
+    			"ide": {
+    				"cuf": "{{ _.emitente.endereco.coduf }}",
+    				"cnf": "00015965",
+    				"natop": "Transferencia de mercadoria ad",
+    				"mod": "55",
+    				"serie": "{{ _.serie }}",
+    				"nnf": "{{ _.numero }}",
+    				"dhemi": "{{ _.datahora }}",
+    				"dhsaient": "{{ _.datahora }}",
+    				"tpnf": "1",
+    				"iddest": "1",
+    				"cmunfg": "{{ _.emitente.endereco.codmunicipio }}",
+    				"tpimp": "1",
+    				"tpemis": "1",
+    				"cdv": "1",
+    				"tpamb": "2",
+    				"finnfe": "1",
+    				"indfinal": "1",
+    				"indintermed": "1",
+    				"indpres": "9",
+    				"procemi": "0",
+    				"verproc": "WEBGEX",
+    				"dhcont_": "2022-01-05T19:00:00-03:00",
+    				"xjust_": "problemas tecnicos na sefaz"
+    			},
+    			"emit": {
+    				"cnpj": "{{ _.emitente.cnpj }}",
+    				"xnome": "{{ _.emitente.razaosocial }}",
+    				"xfant": "{{ _.emitente.nomefantasia }}",
+    				"enderemit": {
+    					"xlgr": "{{ _.emitente.endereco.logradouro }}",
+    					"nro": "{{ _.emitente.endereco.numero }}",
+    					"xbairro": "{{ _.emitente.endereco.bairro }}",
+    					"cmun": "{{ _.emitente.endereco.codmunicipio }}",
+    					"xmun": "{{ _.emitente.endereco.municipio }}",
+    					"uf": "{{ _.emitente.endereco.uf }}",
+    					"cep": "{{ _.emitente.endereco.cep }}",
+    					"cpais": "{{ _.emitente.endereco.codpais }}",
+    					"xpais": "{{ _.emitente.endereco.pais }}"
+    				},
+    				"ie": "{{ _.emitente.ie }}",
+    				"crt": "3"
+    			},
+    			"dest": {
+    				"cnpj": "{{ _.destinatario.cnpj }}",
+    				"xNome": "NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL",
+    				"enderdest": {
+    					"xlgr": "{{ _.destinatario.endereco.logradouro }}",
+    					"nro": "{{ _.destinatario.endereco.numero }}",
+    					"xbairro": "{{ _.destinatario.endereco.bairro }}",
+    					"cmun": "{{ _.destinatario.endereco.codmunicipio }}",
+    					"xmun": "{{ _.destinatario.endereco.municipio }}",
+    					"uf": "{{ _.destinatario.endereco.uf }}",
+    					"cep": "{{ _.destinatario.endereco.cep }}",
+    					"cpais": "{{ _.destinatario.endereco.codpais }}",
+    					"xpais": "{{ _.destinatario.endereco.pais }}",
+    					"fone": "{{ _.destinatario.telefone }}"
+    				},
+    				"ie": "{{ _.destinatario.ie }}",
+    				"indiedest": "9",
+    				"email": "{{ _.destinatario.email }}"
+    			},
+    			"det": [
+    				{
+    					"nitem": "1",
+    					"prod": {
+    						"cprod": "000537",
+    						"cean": "4719331802882",
+    						"xprod": "TAMPA FLIPTOP / AZUL P COLA",
+    						"ncm": "39235000",
+    						"cest": "2103500",
+    						"cfop": "5102",
+    						"ucom": "M",
+    						"qcom": "1.9658",
+    						"vuncom": "100.5523",
+    						"vprod": "197.67",
+    						"ceantrib": "4719331802882",
+    						"utrib": "UND",
+    						"qtrib": "1.9658",
+    						"vuntrib": "100.5523",
+    						"indtot": "1"
+    					},
+    					"imposto": {
+    						"icms": {
+    							"icms00": {
+    								"orig": "4",
+    								"cst": "00",
+    								"modbc": "3",
+    								"vbc": "197.67",
+    								"picms": "18.00",
+    								"vicms": "35.58"
+    							}
+    						},
+    						"ipi": {
+    							"cenq": "999",
+    							"ipint": {
+    								"cst": "53"
+    							}
+    						},
+    						"pis": {
+    							"pisnt": {
+    								"cst": "08"
+    							}
+    						},
+    						"cofins": {
+    							"cofinsnt": {
+    								"cst": "08"
+    							}
+    						}
+    					}
+    				}
+    			],
+    			"total": {
+    				"icmstot": {
+    					"vbc": "197.67",
+    					"vicms": "35.58",
+    					"vicmsdeson": "0.00",
+    					"vfcpufdest": "0.00",
+    					"vicmsufdest": "0.00",
+    					"vicmsufremet": "0.00",
+    					"vfcp": "0.00",
+    					"vbcst": "0.00",
+    					"vst": "0.00",
+    					"vfcpst": "0.00",
+    					"vfcpstret": "0.00",
+    					"vprod": "197.67",
+    					"vfrete": "0.00",
+    					"vseg": "0",
+    					"vdesc": "0.00",
+    					"vii": "0.00",
+    					"vipi": "0.00",
+    					"vipidevol": "0.00",
+    					"vpis": "0.00",
+    					"vcofins": "0.00",
+    					"voutro": "0.00",
+    					"vnf": "197.67"
+    				}
+    			},
+    			"transp": {
+    				"modfrete": "0",
+    				"vol": [
+    					{
+    						"qvol": "001",
+    						"esp": "VOL",
+    						"pesol": "0.865",
+    						"pesob": "0.865"
+    					}
+    				],
+    				"transporta": {
+    					"uf": "SP",
+    					"xmun": "SAO PAULO",
+    					"xender": "ALAMEDA SANTOS, 2400",
+    					"cnpj": "18277493000177",
+    					"ie": "ISENTO",
+    					"xnome": "LOGGI TECNOLOGIA LTDA."
+    				}
+    			},
+    			"pag": {
+    				"detpag": [
+    					{
+    						"tpag": "99",
+    						"vpag": "1.00",
+    						"xpag": "OUTROS"
+    					},
+    					{
+    						"tpag": "03",
+    						"vpag": "99.00"
+    					}
+    				]
+    			},
+    			"cobr": {
+    				"fat": {
+    					"nfat": "1",
+    					"vorig": "100.00",
+    					"vdesc": "0.00",
+    					"vliq": "100.00"
+    				},
+    				"dup": [
+    					{
+    						"ndup": "001",
+    						"vdup": "50.00",
+    						"dvenc": "2022-11-08"
+    					},
+    					{
+    						"ndup": "002",
+    						"vdup": "50.00",
+    						"dvenc": "2022-12-08"
+    					}
+    				]
+    			},
+    			"infintermed": {
+    				"cnpj": "12519065000127",
+    				"idcadinttran": "Paulo"
+    			},
+    			"infadic": {
+    				"infcpl": "CONFIRA A SUA MERCADORIA NO ATO DO RECEBIMENTO, POIS NAO NOS RESPONSABILIZAMOS POR RECLAMACOES APOS A ASSINATURA DO CANHOTO OU DO CONHECIMENTO DE FRETE"
+    			}
+    		}
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3b8f011b9c294d9f8c6b913f9a346963
+authentication: {}
+metaSortKey: -1657742406452
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
