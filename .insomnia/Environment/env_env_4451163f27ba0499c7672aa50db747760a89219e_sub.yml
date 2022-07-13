@@ -1,0 +1,18 @@
+_id: env_env_4451163f27ba0499c7672aa50db747760a89219e_sub
+type: Environment
+parentId: env_4451163f27ba0499c7672aa50db747760a89219e
+modified: 1657746635772
+created: 1657742971594
+name: OpenAPI env
+data:
+  scheme: https
+  base_path: /v2
+  host: petstore.swagger.io
+dataPropertyOrder:
+  "&":
+    - scheme
+    - base_path
+    - host
+color: null
+isPrivate: false
+metaSortKey: 1657742971594

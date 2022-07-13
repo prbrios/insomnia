@@ -1,7 +1,7 @@
 _id: req_f6188262c22a4c0f9c90dbc4f66f15bf
 type: Request
 parentId: fld_57387dc9fb74435f84410b42f91dc84e
-modified: 1657742587674
+modified: 1657747654917
 created: 1657736037376
 url: "{{url}}/nfe/v1/emissao"
 name: Emissão
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: >-
     {
-    	"uuid": "{{_.uuid}}",
+    	"uuid": "{{ _.emitente.uuid }}",
     	"idlote": "1",
     	"nota": {
     		"infnfe": {
@@ -42,6 +42,9 @@ body:
     				"dhcont_": "2022-01-05T19:00:00-03:00",
     				"xjust_": "problemas tecnicos na sefaz"
     			},
+    			"autxml_":[{
+    				"cnpj": "{{ _.destinatario.cnpj }}"
+    			}],
     			"emit": {
     				"cnpj": "{{ _.emitente.cnpj }}",
     				"xnome": "{{ _.emitente.razaosocial }}",

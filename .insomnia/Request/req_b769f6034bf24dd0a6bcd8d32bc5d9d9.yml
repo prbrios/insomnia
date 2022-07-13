@@ -1,0 +1,31 @@
+_id: req_b769f6034bf24dd0a6bcd8d32bc5d9d9
+type: Request
+parentId: fld_57387dc9fb74435f84410b42f91dc84e
+modified: 1657746513944
+created: 1657743451653
+url: "{{_.url}}/nfe/v1/manifestodestinatario"
+name: Manifesto do Destinatário - Confirm. Operação
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"uuid":"{{ _.uuid }}",
+    	"chave":"{{ _.chave }}",
+    	"tipo":"210200"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8bee50e7f4ef4e628709fa31317c086d
+authentication: {}
+metaSortKey: -1657742406402
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

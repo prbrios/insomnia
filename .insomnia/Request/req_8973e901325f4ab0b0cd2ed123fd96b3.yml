@@ -1,0 +1,32 @@
+_id: req_8973e901325f4ab0b0cd2ed123fd96b3
+type: Request
+parentId: fld_57387dc9fb74435f84410b42f91dc84e
+modified: 1657752878766
+created: 1657744309302
+url: "{{_.url}}/nfe/v1/distribuicaodfe"
+name: Distribuição DFe
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"uuid":"{{ _.uuid }}",
+    	"chave":"{{ _.chave }}",
+    	"chave_": "000000000000001",
+    	"tipo":"CHAVE"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8bee50e7f4ef4e628709fa31317c086d
+authentication: {}
+metaSortKey: -1657742406352
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

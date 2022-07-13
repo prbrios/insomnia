@@ -1,0 +1,31 @@
+_id: req_ed2f255388ab4a3daea2401a2d6fec5f
+type: Request
+parentId: fld_57387dc9fb74435f84410b42f91dc84e
+modified: 1657747659818
+created: 1657744114293
+url: "{{_.url}}/nfe/v1/manifestodestinatario"
+name: Manifesto do Destinatário - Ciência da Operação
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"uuid":"{{ _.uuid }}",
+    	"chave":"{{ _.chave }}",
+    	"tipo":"210210"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8bee50e7f4ef4e628709fa31317c086d
+authentication: {}
+metaSortKey: -1657742406427
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

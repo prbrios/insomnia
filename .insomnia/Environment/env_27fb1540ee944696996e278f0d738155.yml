@@ -1,32 +1,32 @@
-_id: env_939c236af88e42ac95d2d3c0647b6708
+_id: env_27fb1540ee944696996e278f0d738155
 type: Environment
 parentId: env_4451163f27ba0499c7672aa50db747760a89219e
-modified: 1657747009910
-created: 1657736153623
-name: "DFEAPI :: 07272825000295 -> 07272825000457"
+modified: 1657747323303
+created: 1657747013304
+name: "DFEAPI :: 00467702000180 -> 07272825000457"
 data:
   url: http://localhost:8080
   datahora: "{% now 'custom', '' %}"
   serie: "1"
-  numero: "1003"
+  numero: "1000"
   emitente:
-    uuid: 108f1c96-dd39-4a19-b992-9a591b31fff4
-    cnpj: "07272825000295"
-    ie: "061913057"
-    razaosocial: TECNO INDUSTRIA E COMERCIO DE COMPUTADORES LTDA
-    nomefantasia: IBYTE
+    uuid: b7f76c38-bb48-463d-afb0-1b6e7593bca3
+    cnpj: "00467702000180"
+    ie: "069507333"
+    razaosocial: ISOQUIMICA INDUSTRIAL LTDA ME
+    nomefantasia: ISOQUIMICA
     email: email@email999.com.br
     telefone: "85000000000"
     crt: "3"
     endereco:
-      logradouro: AV RUI BARBOSA
-      numero: "2456"
-      bairro: JOAQUIM TAVORA
-      codmunicipio: "2304400"
-      municipio: FORTALEZA
+      logradouro: RUA 04
+      numero: "3709"
+      bairro: VILA CARLOUBER
+      codmunicipio: "2303709"
+      municipio: CAUCAIA
       uf: CE
       coduf: "23"
-      cep: "60115222"
+      cep: "61600000"
       codpais: "1058"
       pais: BRASIL
   destinatario:
@@ -101,4 +101,4 @@ dataPropertyOrder:
     - pais
 color: null
 isPrivate: false
-metaSortKey: 1657736153623
+metaSortKey: 1657739562608.5
